@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineMatch Web: Recomentação de Séries</title>
+    <meta name="description" content="As melhores Séries para você em tempo real baseados no seu perfil e gêneros favoritos">
+
+    <meta property="og:title" content="CineMach Web: Recomendação de Séries">
+    <meta property="og:description" content="As melhores Séries para você em tempo real baseados no seu perfil e gêneros favoritos">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?auto=format&fit=crop&w=1200&h=630&q=80">    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1><img src="./img/logo-svg.svg" alt="Logótipo CineMatch Web" width="250"></h1>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        <!-- Um botão/link para reiniciar e trocar de perfil, conforme exigido no RF03 -->
+        <li><a href="#" id="btn-trocar-perfil">Trocar Perfil</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <main>
+
+        <section id="secao-perfil">
+            <h2>Descubra sua próxima série favorita</h2>
+            <!--inserir formulário do RF02 aqui-->
+        </section>
+
+        <!--Seção de séries recomendadas-->
+        <section id="secao-resultados">
+            <!-- O container #resultados receberá os <article> (cards) gerados pelo JavaScript (RF08) -->
+            <div id="resultados" aria-live="polite"></div>
+        </section>
+
+    </main>
+    
+    <footer>
+    <p>Projeto CineMatch Web desenvolvido por Diego Lopes, Edson Antonio e Roberto Silva — Qualificação em Desenvolvimento Mobile com React Native (SCTEC/SENAI).</p>
+    </footer>
+
+    <!-- Importação do JavaScript como Módulo ES (RF14) -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
